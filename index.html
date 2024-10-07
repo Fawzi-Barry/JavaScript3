@@ -130,10 +130,10 @@
       document.getElementById("t3-error").innerHTML = "";
       if (parseFloat(num1.value) <= range && parseFloat(num2.value) <= range) {
         document.getElementById("t3-result").innerHTML =
-          "result = " + True + "✅";
+          "result =  True ✅";
       } else {
         document.getElementById("t3-result").innerHTML =
-          "result = " + False + "❌";
+          "result =  False ❌";
       }
     }
     function findClosest() {
@@ -152,11 +152,12 @@
         document.getElementById("t4-result").innerHTML =
           "both number are equal";
       } else if (x > y) {
-        document.getElementById("t4-result").innerHTML =
-          "Number " + num1.value + " is closest value to 100";
-      } else {
-        document.getElementById("t4-result").innerHTML =
+      document.getElementById("t4-result").innerHTML =
           "Number " + num2.value + " is closest value to 100";
+      } else {
+        
+         document.getElementById("t4-result").innerHTML =
+          "Number " + num1.value + " is closest value to 100";
       }
       const value = document.getElementById("text1").value;
       const str = value.substr(1, value.length - 2);
